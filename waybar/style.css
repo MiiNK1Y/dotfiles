@@ -1,39 +1,19 @@
+@import './rose-pine.css';
+
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
 }
 
-window#waybar {
-    background-color: rgba(0, 0, 0, 0.5);
-    /*
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
-    */
-    color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
+menu {
+    border-radius: 8px;
+    padding: 5px;
+    background: #161320;
+    color: #B5E8E0;
 }
 
-window#waybar.hidden {
-    opacity: 0.2;
-}
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
-window#waybar.termite {
-    background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
+menuitem {
+    border-radius: 5px;
 }
 
 button {
@@ -44,13 +24,31 @@ button {
     border-radius: 0;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
     box-shadow: inset 0 -3px #ffffff;
 }
 
-/* you can set a style on hover for any module like this */
+window#waybar {
+    background-color: rgba(0, 0, 0, 0);
+    color: @text;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
 #pulseaudio:hover {
     background-color: #a37800;
 }
@@ -76,14 +74,12 @@ button:hover {
 
 #mode {
     background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
 }
 
 #clock,
 #battery,
 #cpu,
 #memory,
-#disk,
 #temperature,
 #backlight,
 #network,
@@ -94,10 +90,9 @@ button:hover {
 #mode,
 #idle_inhibitor,
 #scratchpad,
-#power-profiles-daemon,
 #language,
 #mpd {
-    margin: 2px;
+    margin-top: 4px;
     border-radius: 4px;
     padding: 0 10px;
     color: #ffffff;
@@ -108,18 +103,31 @@ button:hover {
     margin: 0 4px;
 }
 
+.modules-left,
+.modules-center,
+.modules-right {
+    background-color: @base;
+    border-radius: 5px;
+    margin: 2px 2px 0 2px;
+}
+
 /* If workspaces is the leftmost module, omit left margin */
+/*
 .modules-left > widget:first-child > #workspaces {
     margin-left: 0;
 }
+*/
 
 /* If workspaces is the rightmost module, omit right margin */
+/*
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
 }
+*/
 
 #clock {
     background-color: #64727D;
+    margin-right: 4px;
 }
 
 #battery {
@@ -150,25 +158,6 @@ button:hover {
     animation-direction: alternate;
 }
 
-#power-profiles-daemon {
-    padding-right: 15px;
-}
-
-#power-profiles-daemon.performance {
-    background-color: #f53c3c;
-    color: #ffffff;
-}
-
-#power-profiles-daemon.balanced {
-    background-color: #2980b9;
-    color: #ffffff;
-}
-
-#power-profiles-daemon.power-saver {
-    background-color: #2ecc71;
-    color: #000000;
-}
-
 label:focus {
     background-color: #000000;
 }
@@ -180,10 +169,6 @@ label:focus {
 
 #memory {
     background-color: #9b59b6;
-}
-
-#disk {
-    background-color: #964B00;
 }
 
 #backlight {
@@ -282,8 +267,6 @@ label:focus {
     background: #00b093;
     color: #740864;
     padding: 0 5px;
-    margin-left: 5px;
-    margin-right: 5px;
     min-width: 16px;
 }
 

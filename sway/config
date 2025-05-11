@@ -10,7 +10,7 @@ set $menu "wofi --show drun"
 
 ### Output configuration
 #
-output * bg /home/a13k5/Images/wallhaven/wallhaven-9oxv2x.png fill
+output * bg /home/a13k5/Images/wallhaven/wallhaven-qr9q2q.jpg fill
 
 ### Idle configuration
 #
@@ -19,15 +19,18 @@ output * bg /home/a13k5/Images/wallhaven/wallhaven-9oxv2x.png fill
 # resumed. It will also lock your screen before your computer goes to sleep.
 #
 exec swayidle -w \
-         timeout 300 'swaylock -f -c 000000' \
+         timeout 300 'swaylock -C ~/.config/swaylock/rose-pine -f -c 000000' \
          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-         before-sleep 'swaylock -f -c 000000'
+         before-sleep 'swaylock -C ~/.config/swaylock/rose-pine -f -c 000000'
 
 
 ### Key bindings
 #
 # Basics:
 #
+    # Lock display with swaylock
+    bindsym $mod+x exec 'swaylock -C ~/.config/swaylock/rose-pine'
+
     # Start a terminal
     bindsym $mod+Return exec $term
 
@@ -173,7 +176,7 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
     # Special key to take a screenshot with grim
-    # bindsym Print exec grim
+    bindsym Print exec grim
 
 #
 # Status Bar:
