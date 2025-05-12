@@ -202,10 +202,8 @@ input type:touchpad {
 input type:keyboard {
   # Languages to rotate between
   xkb_layout us,no
-  # Toggle between languages
-  xkb_options grp:rctrl_toggle
-  # Make "CapsLock" act as "Escape"
-  xkb_options caps:escape
+  # Toggle between languages & make "CapsLock" an aditional "Escape"
+  xkb_options grp:win_space_toggle,caps:escape
 }
 
 
