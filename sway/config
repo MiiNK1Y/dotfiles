@@ -20,9 +20,9 @@ output * bg /home/a13k5/Images/wallhaven/wallhaven-qr9q2q.jpg fill
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 exec swayidle -w \
-  timeout 300 'swaylock -C ~/.config/swaylock/rose-pine -f -c 000000' \
+  timeout 300 'swaylock -C /home/a13k5/.config/swaylock/rose-pine -f -c 000000' \
   timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-  before-sleep 'swaylock -C ~/.config/swaylock/rose-pine -f -c 000000'
+  before-sleep 'swaylock -C /home/a13k5/.config/swaylock/rose-pine -f -c 000000'
 
 
 ### Key bindings
@@ -30,7 +30,7 @@ exec swayidle -w \
 ## The basics:
 #
 # Lock display with swaylock
-bindsym $mod+x exec 'swaylock -C ~/.config/swaylock/rose-pine'
+bindsym $mod+x exec 'swaylock -C /home/a13k5/.config/swaylock/rose-pine'
 #
 # Start a terminal
 bindsym $mod+Return exec $term
@@ -209,10 +209,21 @@ input type:keyboard {
 }
 
 
+### Colors
+#
+# class                 border  backgr. text    indicator child_border
+client.focused          #C4A7E7 #C4A7E7 #000000 #9CCFD8   #C4A7E7
+client.focused_inactive #6E6A86 #6E6A86 #E0DEF4 #6E6A86   #6E6A86
+client.unfocused        #191724 #191724 #888888 #191724   #191724
+client.urgent           #EB6f92 #EB6f92 #E0DEF4 #EB6f92   #EB6f92
+client.placeholder      #000000 #0c0c0c #E0DEF4 #000000   #0c0c0c
+client.background       #191724
+
+
 ### Other stuff
 #
 # Window gaps
-gaps inner 5
+gaps inner 7
 #
 # Hide titlebar, other border styling
 default_border pixel 3

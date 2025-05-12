@@ -25,8 +25,8 @@
   "sway/workspaces": {
     "format": "{name}: {icon}",
     "format-icons": {
-      "focused": "",
-      "default": ""
+      "focused": "",
+      "default": ""
     }
   },
 
@@ -34,70 +34,27 @@
     "format": "<span style=\"italic\">{}</span>"
   },
 
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10
+  },
+
   "idle_inhibitor": {
     "tooltip": false,
-    "format": "{icon}",
+    "format": "{icon} ",
     "format-icons": {
       "activated": "",
       "deactivated": ""
     }
   },
 
-  "tray": {
-    "icon-size": 21,
-    "spacing": 10
-  },
-
-  "clock": {
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%d-%m-%Y}"
-  },
-
-  "cpu": {
-    "tooltip": false,
-    "format": "{usage}% "
-  },
-
-  "backlight": {
-    "tooltip": false,
-    "format": "{percent}% {icon}",
-    "format-icons": ["", "", "", "", "", "", "", "", ""]
-  },
-
-  "battery": {
-    "tooltip": false,
-    "format": "{capacity}% {icon}",
-    "format-full": "{capacity}% {icon}",
-    "format-charging": "{capacity}% ",
-    "format-plugged": "{capacity}% ",
-    "format-alt": "{time} {icon}",
-    "format-icons": ["", "", "", "", ""],
-    "states": {
-      "warning": 30,
-      "critical": 15
-    }
-  },
-
-  "sway/language": {
-    "tooltip": false
-  },
-
-  "network": {
-    "tooltip": false,
-    "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "{ipaddr}/{cidr} ",
-    "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "Disconnected ⚠",
-    "format-alt": "{ifname}: {ipaddr}/{cidr}"
-  },
-
   "pulseaudio": {
     "on-click": "pavucontrol",
-    "format": "{volume}% {icon}  {format_source}",
-    "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
-    "format-source": "{volume}% ",
+    "format": "{icon}  {volume}%  {format_source}",
+    "format-bluetooth": "{volume}% {icon}  {format_source}",
+    "format-bluetooth-muted": "  {icon}  {format_source}",
+    "format-muted": "  {format_source}",
+    "format-source": "  {volume}%",
     "format-source-muted": "",
     "format-icons": {
       "headphone": "",
@@ -108,5 +65,48 @@
       "car": "",
       "default": ["", "", ""]
     }
+  },
+
+  "network": {
+    "tooltip": false,
+    "format-wifi": "  {essid} ({signalStrength}%)",
+    "format-ethernet": "  {ipaddr}/{cidr}",
+    "format-linked": "  {ifname} (No IP)",
+    "format-disconnected": "⚠ Disconnected",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}"
+  },
+
+  "cpu": {
+    "tooltip": false,
+    "format": "  {usage}%"
+  },
+
+  "backlight": {
+    "tooltip": false,
+    "format": "{icon}  {percent}%",
+    "format-icons": ["", "", "", "", "", "", "", "", ""]
+  },
+
+  "sway/language": {
+    "tooltip": false
+  },
+
+  "battery": {
+    "tooltip": false,
+    "format": "{icon} {capacity}%",
+    "format-full": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-icons": ["", "", "", "", ""],
+    "states": {
+      "warning": 30,
+      "critical": 15
+    }
+  },
+
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%d-%m-%Y}"
   }
 }

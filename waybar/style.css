@@ -5,11 +5,15 @@
   padding-left: 4px;
   font-family: JetbrainsMono Nerd Font;
   font-size: 14px;
-  color: @text;
 }
 
 #waybar {
   background-color: transparent;
+  color: @text;
+}
+
+#workspaces button {
+  color: @text;
 }
 
 #workspaces button.focused {
@@ -47,7 +51,7 @@
 #language,
 #battery,
 #clock {
-  padding: 5px 20px;
+  padding: 3px 15px;
   border-right: 1px solid @overlay;
 }
 
@@ -57,11 +61,11 @@
 
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
-  color: #eb4d4b;
+  color: @rose;
 }
 
 #network.disconnected {
-  color: #f53c3c;
+  color: @rose;
 }
 
 #cpu,
@@ -74,16 +78,19 @@
   color: @foam;
 }
 
+#battery.warning {
+  color: @rose;
+}
+
 @keyframes blink {
   to {
-    background-color: @text;
-    color: @base;
+    color: transparent;
   }
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-  color: #f53c3c;
+  color: @love;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: steps(12);
