@@ -37,8 +37,6 @@
   background: transparent;
 }
 
-#mpd,
-#custom-media,
 #tray,
 #idle_inhibitor,
 #pulseaudio,
@@ -51,22 +49,6 @@
 #clock {
   padding: 5px 20px;
   border-right: 1px solid @overlay;
-}
-
-#mpd.disconnected {
-  color: #f53c3c;
-}
-
-#mpd.stopped {
-  color: #90b1b1;
-}
-
-#mpd.paused {
-  color: #51a37a;
-}
-
-#custom-media {
-  min-width: 100px;
 }
 
 #tray > .passive {
