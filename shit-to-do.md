@@ -132,3 +132,14 @@ The menu previously looked fine, just need to fix the theme again.
 Was missing 3 packages, all in the AUR. Check out the AUR manual for makepkg (remember flags!).
 
 ### [ ] Get my tmux config and other remaining configs from T7 drive.
+
+### [ ] Install and configure:
+[ ] OpenVPN
+[ ] ProtonVPN
+[ ] 4kVideoDownloader
+[ ] DBeaver
+[ ] Docker
+[ ] PiP (python)
+[ ] _some image / album viewer_
+[ ] VSCode
+[ ] Sublime Text

@@ -1,74 +1,75 @@
 sudo pacman -S --needed \
   # Sway stuff
-	sway \
-	swaybg \
-	waybar \
-	swayidle \
-	swaylock \
-	swaync \
-	wofi \
+  sway \
+  swaybg \
+  waybar \
+  swayidle \
+  swaylock \
+  swaync \
+  wofi \
 
   # Terminal + TUI stuff
-	foot \
-	tmux \
-	neovim \
-	fastfetch \
-	htop \
-	btop \
+  foot \
+  tmux \
+  neovim \
+  vim \
+  fastfetch \
+  htop \
+  btop \
 
   # Other terminal tools
-	git \
-	man-db \
-	fzf \
-	fd \
-	ripgrep \
-	unzip \
-	ffmpeg \
-	grim \
-	yt-dlp \
+  git \
+  man-db \
+  fzf \
+  fd \
+  ripgrep \
+  unzip \
+  ffmpeg \
+  grim \
+  yt-dlp \
 
   # Applications
-	firefox \
+  firefox \
   chromium \
   qbittorrent \
-	vlc \
+  vlc \
   gimp \
   libreoffice-fresh \
   virt-manager \
   qemu-system-x86 \
+  obsidian \
 
   # File-manager (thunar) stuff
-	thunar \
-	tumbler \
-	ffmpegthumbnailer \
+  thunar \
+  tumbler \
+  ffmpegthumbnailer \
   webp-pixbuf-loader \
-	thunar-archive-plugin \
-	thunar-volman \
+  thunar-archive-plugin \
+  thunar-volman \
   gvfs \
 
   # Other tools
   blueman \
-	openssh \
-	brightnessctl \
-	pavucontrol \
+  openssh \
+  brightnessctl \
+  pavucontrol \
   xorg-xwayland \
 
   # Fonts
-	noto-fonts \
-	noto-fonts-cjk \
-	noto-fonts-emoji \
-	otf-font-awesome \
+  noto-fonts \
+  noto-fonts-cjk \
+  noto-fonts-emoji \
+  otf-font-awesome \
 
   # Styling stuff
-	nwg-look \
+  nwg-look \
   papirus-icon-theme \
-	qt5-wayland \
-	qt6-base \
-	qt6-wayland \
-	libadwaita \
-
+  qt5-wayland \
+  qt6-base \
+  qt6-wayland \
+  libadwaita
 
 # Install after enabeling 'multilib' in '/etc/pacman.conf'
 sudo pacman -S --needed \
-  steam                   # Steam (pacman) will ask to select Vulcan drivers, \
-                          # select the Intel version in both cases (for Thinkpad X1 Carbon).
+  steam # Steam (pacman) will ask to select Vulcan drivers, \
+        # select the Intel version in both cases (for Thinkpad X1 Carbon).
