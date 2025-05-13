@@ -42,8 +42,10 @@ sudo pacman -S --needed \
 	swaync \								# Notification daemon for sway.
 	ripgrep \               # For Lazyvim
 	fd \                    # For Lazyvim
-  gvfs \                  # For thunar auto-mounting and other features.
-  xorg-xwayland           # To make steam and other X-apps work.
+  gvfs \                  # For Thunar auto-mounting and other features.
+  xorg-xwayland \         # To make steam and other X-apps work.
+  qbittorrent
+  blueman
 
 # Install after enabeling 'multilib' in '/etc/pacman.conf'
 sudo pacman -S --needed \
