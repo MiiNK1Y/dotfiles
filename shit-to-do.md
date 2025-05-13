@@ -16,13 +16,15 @@ Some way to control where sound goes, either to:
 ### [X] Sound IN controller
 Same as OUT, but with the built-in laptop microphone.
 
-### [ ] Bluetooth connection and manager
+### [X] Bluetooth connection and manager
 Controller for bluetooth connections.
 
-### [X] Wofi applauncher
+### [ ] Wofi applauncher
 Make functional, and style.
+[ ] style
+[ ] remove unneeded applications.
 
-### [/] Waybar statusbar
+### [X] Waybar statusbar
 Styling and functional widgets:
 - sway workspaces
 - clock
@@ -38,7 +40,7 @@ Set custom wallpapers, maybe simple as swaybg?
 ### [X] Git
 Login and fetching.
 
-### [/] Neovim
+### [X] Neovim
 From the bottom up, NO LAZYVIM (YOU LAZYASS), time to learn the basics.
 - LSP configs
 - tab-spacing to 2
@@ -64,7 +66,7 @@ Something WAY more usable...
 Two-finger scroll scrolls the wrong direction, both in scrolling
 and Firefox back-and-forth navigation.
 
-### [ ] Set CapsLock to ESC
+### [X] Set CapsLock to ESC
 
 ### [X] Foot terminal
 - font
@@ -81,7 +83,7 @@ Make shure input, output and camera works as intended.
 ### [/] Display lock (swaylock?)
 Configure properly, lock display when closing lid.
 
-### [ ] Lid-closing action
+### [/] Lid-closing action
 - lock the display
 - hibernate after some time
 
@@ -102,7 +104,7 @@ Shockingly easy, but xwayland is needed to emulate / virtualize X11.
 - Python3 + PiP
 - DotNET
 
-### [/] External display output
+### [X] External display output
 Proper setup when connection detected.
 (Still need to figure out the external display position relative to laptop position.)
 
@@ -116,9 +118,17 @@ Still need to be styled, or maybe replace for swaync??? (it has a premade theme 
 ### [X] Brightness controller
 Set up function-keys for brightness.
 
-### [ ] Display relative location
+### [X] Display relative location
 Fix the monitor location for moving the pointer across monitors.
 
-### [ ] Sway active and inactive workspace cross-monitor
+### [X] Sway active and inactive workspace cross-monitor
 Make it so that you can see what workspace is open on the other, inactive monitor.
-Currently I dont know what workspace is open on the monitor that does not have the active workspace.
+Currently I don't know what workspace is open on the monitor that does not have the active workspace.
+
+### [ ] Fix Waybar right-click menu
+The menu previously looked fine, just need to fix the theme again.
+
+### [X] Install missing linux-firmware drivers from the AUR
+Was missing 3 packages, all in the AUR. Check out the AUR manual for makepkg (remember flags!).
+
+### [ ] Get my tmux config and other remaining configs from T7 drive.
