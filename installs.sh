@@ -44,8 +44,9 @@ sudo pacman -S --needed \
 	fd \                    # For Lazyvim
   gvfs \                  # For Thunar auto-mounting and other features.
   xorg-xwayland \         # To make steam and other X-apps work.
-  qbittorrent
-  blueman
+  qbittorrent \
+  blueman \
+  papirus-icon-theme
 
 # Install after enabeling 'multilib' in '/etc/pacman.conf'
 sudo pacman -S --needed \
