@@ -32,13 +32,13 @@ output * bg /home/a13k5/Images/wallhaven/wallhaven-qr9q2q.jpg fill
 
 ### Idle configuration
 #
-# This will lock your screen after 300 seconds of inactivity, then turn off
+# This will lock your screen after 600 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 exec swayidle -w \
-  timeout 300 'swaylock -C /home/a13k5/.config/swaylock/rose-pine -f -c 000000' \
-  timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-  before-sleep 'swaylock -C /home/a13k5/.config/swaylock/rose-pine -f -c 000000'
+  timeout 600 'swaylock -C /home/a13k5/.config/swaylock/rose-pine -f' \
+  timeout 900 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+  before-sleep 'swaylock -C /home/a13k5/.config/swaylock/rose-pine -f'
 
 
 ### Key bindings
@@ -46,7 +46,7 @@ exec swayidle -w \
 ## The basics:
 #
 # Lock display with swaylock
-bindsym $mod+x exec 'swaylock -C /home/a13k5/.config/swaylock/rose-pine'
+bindsym $mod+x exec 'swaylock -C /home/a13k5/.config/swaylock/rose-pine -f'
 #
 # Start a terminal
 bindsym $mod+Return exec $term

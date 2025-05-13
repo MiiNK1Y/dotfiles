@@ -1,5 +1,5 @@
 # Background color
-color=#191724
+color=#00000000
 
 # Layout text colors
 layout-bg-color=#00000000
@@ -43,3 +43,8 @@ ring-caps-lock-color=#f6c177aa
 ring-ver-color=#c4a7e7aa
 ring-wrong-color=#eb6f92aa
 
+# Size
+indicator-radius=80
+
+# Make the indicator visible at any time
+indicator-idle-visible
