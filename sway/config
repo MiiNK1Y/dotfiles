@@ -27,7 +27,7 @@ output 'LG Electronics LG HDR WQHD+ 307NTAB8Y560' pos 0 0
 output 'BOE 0x094C Unknown' pos 960 1600
 #
 # Set wallpaper for all display outputs
-output * bg /home/a13k5/Images/wallhaven/wallhaven-qr9q2q.jpg fill
+output * bg /home/a13k5/Pictures/Images/wallhaven/wallhaven-qr9q2q.jpg fill
 
 
 ### Idle configuration
@@ -247,3 +247,11 @@ titlebar_border_thickness 0
 #
 # Was here by default, unshure about what it does, so keeping it here just in case.
 include /etc/sway/config.d/*
+#
+## Start notifictaion daemon:
+#
+# Notification Daemon
+exec swaync
+#
+# Toggle control center
+bindsym $mod+Shift+n exec swaync-client -t -sw

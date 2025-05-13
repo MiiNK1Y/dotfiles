@@ -46,7 +46,8 @@ sudo pacman -S --needed \
   xorg-xwayland \         # To make steam and other X-apps work.
   qbittorrent \
   blueman \
-  papirus-icon-theme
+  papirus-icon-theme \
+  webp-pixbuf-loader
 
 # Install after enabeling 'multilib' in '/etc/pacman.conf'
 sudo pacman -S --needed \

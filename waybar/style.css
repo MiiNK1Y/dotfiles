@@ -54,6 +54,7 @@
 #backlight,
 #language,
 #battery,
+#custom-notification,
 #clock {
   padding: 3px 15px;
   border-right: 1px solid @overlay;
@@ -75,7 +76,7 @@
 #cpu,
 #backlight,
 #battery {
-  min-width: 40px;
+  min-width: 50px;
 }
 
 #battery.charging, #battery.plugged {
