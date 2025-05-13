@@ -16,6 +16,10 @@
   color: @text;
 }
 
+#workspaces button.visible {
+  color: @gold;
+}
+
 #workspaces button.focused {
   color: @iris;
 }
