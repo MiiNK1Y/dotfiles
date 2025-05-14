@@ -192,6 +192,13 @@ bindsym --locked XF86MonBrightnessUp    exec brightnessctl set 5%+
 #
 # Special key to take a screenshot with grim
 bindsym Print exec grim
+#
+## Launch applications:
+#
+bindsym $mod+Shift+b exec firefox
+bindsym $mod+Shift+f exec thunar
+bindsym $mod+Shift+g exec gimp
+bindsym $mod+Shift+v exec pavucontrol
 
 
 ### Status Bar:
