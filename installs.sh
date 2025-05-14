@@ -23,7 +23,9 @@ sudo pacman -S --needed \
   fzf \
   fd \
   ripgrep \
+  file-roller \
   unzip \
+  unrar \
   ffmpeg \
   grim \
   yt-dlp \
@@ -34,6 +36,7 @@ sudo pacman -S --needed \
   qbittorrent \
   vlc \
   gimp \
+  loupe \
   libreoffice-fresh \
   virt-manager \
   qemu-system-x86 \
