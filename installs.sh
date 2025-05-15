@@ -18,19 +18,16 @@ sudo pacman -S --needed \
   btop \
 
   # Other terminal tools
-  man-db \
   flatpak \
   git \
-  fzf \
-  fd \
-  ripgrep \
   unzip \
   unrar \
   ffmpeg \
   grim \
   yt-dlp \
+  python-pip \
 
-  # Applications
+  # Desktop applications
   firefox \
   chromium \
   discord \
@@ -40,7 +37,6 @@ sudo pacman -S --needed \
   loupe \
   libreoffice-fresh \
   virt-manager \
-  qemu-system-x86 \
   obsidian \
 
   # File-manager (thunar) stuff
@@ -53,6 +49,15 @@ sudo pacman -S --needed \
   file-roller \
   gvfs \
 
+  # Wanted by neovim
+  fzf \
+  fd \
+  ripgrep \
+  luarocks \
+  lazygit \
+  cvs \
+  lua-sec \
+
   # Discord screen-sharing stuff
   gnome-remote-desktop \
   xdg-desktop-portal-wlr \
@@ -64,6 +69,12 @@ sudo pacman -S --needed \
   brightnessctl \
   pavucontrol \
   xorg-xwayland \
+
+  # To make other stuff work
+  cmake \
+  man-db \
+  wget \
+  qemu-system-x86 \
 
   # Fonts
   noto-fonts \
