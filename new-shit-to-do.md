@@ -4,7 +4,7 @@
 For some color and more parent-dirs.
 
 ### [ ] Configure Tmux
-- [ ] config
+- [X] config
 - [ ] plugins
 - [ ] style
 

@@ -46,6 +46,7 @@ sudo pacman -S --needed \
   webp-pixbuf-loader \
   thunar-volman \
   thunar-archive-plugin \
+  xarchiver \
   file-roller \
   gvfs \
 
