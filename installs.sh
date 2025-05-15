@@ -1,11 +1,11 @@
 sudo pacman -S --needed \
   # Sway stuff
   sway \
-  swaybg \
-  waybar \
   swayidle \
   swaylock \
+  swaybg \
   swaync \
+  waybar \
   wofi \
 
   # Terminal + TUI stuff
@@ -18,12 +18,12 @@ sudo pacman -S --needed \
   btop \
 
   # Other terminal tools
-  git \
   man-db \
+  flatpak \
+  git \
   fzf \
   fd \
   ripgrep \
-  file-roller \
   unzip \
   unrar \
   ffmpeg \
@@ -33,6 +33,7 @@ sudo pacman -S --needed \
   # Applications
   firefox \
   chromium \
+  discord \
   qbittorrent \
   vlc \
   gimp \
@@ -47,9 +48,15 @@ sudo pacman -S --needed \
   tumbler \
   ffmpegthumbnailer \
   webp-pixbuf-loader \
-  thunar-archive-plugin \
   thunar-volman \
+  thunar-archive-plugin \
+  file-roller \
   gvfs \
+
+  # Discord screen-sharing stuff
+  gnome-remote-desktop \
+  xdg-desktop-portal-wlr \
+  xdg-desktop-portal \
 
   # Other tools
   blueman \
