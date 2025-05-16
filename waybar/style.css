@@ -73,6 +73,10 @@
   color: @rose;
 }
 
+#language {
+  min-width: 20px;
+}
+
 #cpu,
 #backlight,
 #battery {
