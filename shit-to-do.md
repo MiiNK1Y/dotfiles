@@ -19,10 +19,10 @@ Same as OUT, but with the built-in laptop microphone.
 ### [X] Bluetooth connection and manager
 Controller for bluetooth connections.
 
-### [ ] Wofi applauncher
+### [x] Wofi applauncher
 Make functional, and style.
-[ ] style
-[ ] remove unneeded applications.
+[x] style
+[x] remove unneeded applications.
 
 ### [X] Waybar statusbar
 Styling and functional widgets:
@@ -76,14 +76,16 @@ and Firefox back-and-forth navigation.
 - transparency?     (left up to compositor, sway does not support, but swayfx does, check that out later)
 - background blur?
 
-### [!] Discord
+### [X] Discord
 Make shure input, output and camera works as intended.
 !problems with desktop app, will be using browser-app!
 
-### [/] Display lock (swaylock?)
+!Fixed after installing xwayland for Balatro, still needed some extra wlroot stuff for screensharing, but working now.
+
+### [X] Display lock (swaylock?)
 Configure properly, lock display when closing lid.
 
-### [/] Lid-closing action
+### [X] Lid-closing action
 - lock the display
 - hibernate after some time
 
@@ -100,20 +102,22 @@ Win+Space to rotate language, done in Sway config with xkb_options.
 Shockingly easy, but xwayland is needed to emulate / virtualize X11.
 
 ### [/] Development tools
-- NodeJS + NPM
-- Python3 + PiP
-- DotNET
+- [x] NodeJS + NPM
+- [x] Python3 + PiP
+- [ ] DotNET
 
 ### [X] External display output
 Proper setup when connection detected.
 (Still need to figure out the external display position relative to laptop position.)
 
-### [/] Notification deamon
+### [X] Notification deamon
 Notifiactions currently make their own window,
 make them hover above everything else... and not take up entire windows...
 
 (I think this is solved(?) with "Mako", some built into some tool, I dont know where it comes from.
 Still need to be styled, or maybe replace for swaync??? (it has a premade theme to plug-up.))
+
+Done with swaync, its even pretty...
 
 ### [X] Brightness controller
 Set up function-keys for brightness.
@@ -127,19 +131,21 @@ Currently I don't know what workspace is open on the monitor that does not have 
 
 ### [ ] Fix Waybar right-click menu
 The menu previously looked fine, just need to fix the theme again.
+- This if for CUSTOM menues, not context-type menus that are provided by the _tray_ applications.
+- Tray application context menues are styled by GTK, that needs to be customized still.
 
 ### [X] Install missing linux-firmware drivers from the AUR
 Was missing 3 packages, all in the AUR. Check out the AUR manual for makepkg (remember flags!).
 
-### [ ] Get my tmux config and other remaining configs from T7 drive.
+### [X] Get my tmux config and other remaining configs from T7 drive.
 
-### [ ] Install and configure:
-[ ] OpenVPN
-[ ] ProtonVPN
-[ ] 4kVideoDownloader
-[ ] DBeaver
-[ ] Docker
-[ ] PiP (python)
-[ ] _some image / album viewer_
-[ ] VSCode
-[ ] Sublime Text
+### [/] Install and configure:
+- [ ] OpenVPN
+- [ ] ProtonVPN
+- [ ] 4kVideoDownloader
+- [ ] DBeaver
+- [ ] Docker
+- [x] PiP (python)
+- [x] _some image / album viewer_ (installed Ubuntu's "loupe")
+- [ ] VSCode
+- [x] Sublime Text
