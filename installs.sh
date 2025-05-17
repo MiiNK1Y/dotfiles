@@ -98,3 +98,7 @@ sudo pacman -S --needed \
 sudo pacman -S --needed \
   steam # Steam (pacman) will ask to select Vulcan drivers, \
         # select the Intel version in both cases (for Thinkpad X1 Carbon).
+
+# Install with flatpak after flatpak itself is installed
+flatpak install \
+  com.usebruno.Bruno
