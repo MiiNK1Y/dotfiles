@@ -50,6 +50,8 @@ sudo pacman -S --needed \
   xarchiver \
   file-roller \
   gvfs \
+  gcfs-mtp \
+  gvfs-gphoto2 \
 
   # Wanted by neovim
   fzf \
