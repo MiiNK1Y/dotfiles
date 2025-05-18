@@ -94,11 +94,25 @@ sudo pacman -S --needed \
   qt6-wayland \
   libadwaita
 
+
 # Install after enabeling 'multilib' in '/etc/pacman.conf'
 sudo pacman -S --needed \
   steam # Steam (pacman) will ask to select Vulcan drivers, \
         # select the Intel version in both cases (for Thinkpad X1 Carbon).
 
+
 # Install with flatpak after flatpak itself is installed
 flatpak install \
-  com.usebruno.Bruno
+  com.usebruno.Bruno \
+
+
+# Prepare Paru by intsalling dependencies
+sudo pacman -S --needed \
+  rustup
+
+
+# Install with Paru (AUR) after Paru is installed from the AUR
+paru -S \
+  gnome-themes-extra \
+  adwaita-qt5-git \
+  adwaita-qt6-git
