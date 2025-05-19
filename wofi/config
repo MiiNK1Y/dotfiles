@@ -1,6 +1,6 @@
 show =          drun
-height =        400
-width =         800
+height =        300
+width =         600
 normal_window = false
 hide_scroll =   true
 allow_images =  true
