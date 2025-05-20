@@ -1,0 +1,27 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "chat.commandCenter.enabled": false,
+    "editor.minimap.enabled": false,
+    "workbench.startupEditor": "none",
+    "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+    "workbench.colorTheme": "Super One Dark",
+
+// Rose-pine theme customization
+//    "workbench.colorCustomizations": {
+//        "editor.background": "#000000",
+//        "editorGutter.background": "#000000",
+//        "tab.activeBackground": "#000000",
+//        "tab.inactiveBackground": "#191724",
+//        "titleBar.activeBackground": "#191724",
+//        "editorOverviewRuler.background": "#000000",
+//        "editorOverviewRuler.border": "#000000",
+//        "scrollbarSlider.background": "#191724",
+//    },
+
+    "workbench.activityBar.location": "hidden",
+    "window.commandCenter": false,
+    "breadcrumbs.enabled": false,
+    "editor.scrollbar.verticalScrollbarSize": 7,
+    "editor.scrollbar.horizontalScrollbarSize": 7,
+    "workbench.panel.showLabels": false,
+}
