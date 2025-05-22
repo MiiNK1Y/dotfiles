@@ -223,6 +223,15 @@ bar {
 }
 
 
+### Target certain windows for floating
+#
+# Some windows (like unzipping in Thunar) takes up a whole grid in Sway,
+# force those windows to be floating, to avoid taking unnecessary window space.
+#
+# For FileRoller (Thunar unarchiver)
+for_window [title="Extract"] floating enable
+
+
 ### Custom device controll
 #
 ## Touchpad stuff:
