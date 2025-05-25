@@ -24,4 +24,5 @@
     "editor.scrollbar.verticalScrollbarSize": 7,
     "editor.scrollbar.horizontalScrollbarSize": 7,
     "workbench.panel.showLabels": false,
+    "git.openRepositoryInParentFolders": "never",
 }
