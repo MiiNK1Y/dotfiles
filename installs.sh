@@ -94,6 +94,10 @@ sudo pacman -S --needed \
   qt6-wayland \
   libadwaita
 
+  # Network stuff
+  networkmanager \
+  networkmanager-openvpn \
+
 
 # Install after enabeling 'multilib' in '/etc/pacman.conf'
 sudo pacman -S --needed \
