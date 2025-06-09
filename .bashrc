@@ -8,6 +8,9 @@
 # List directories first and then sort the files by type
 alias ls='ls -AoX --group-directories-first --color=auto'
 alias grep='grep --color=auto'
+alias yt-dlp-a='yt-dlp --extract-audio --audio-format "mp3" --sponsorblock-remove "all" --output "%(title)s.%(ext)s" '
+alias yt-dlp-v='yt-dlp --sponsorblock-remove "all" --output "%(title)s.%(ext)s" '
+
 PS1='[\u@\h \W]\$ '
 
 export NVM_DIR="$HOME/.nvm"
