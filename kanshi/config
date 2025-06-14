@@ -1,0 +1,18 @@
+## Laptop under ultrawide
+#profile {
+#    output 'LG Electronics LG HDR WQHD+ 307NTAB8Y560' position 0.0
+#    output 'BOE 0x094C Unknown' position 960.1600
+#}
+#
+## Laptop to the left of ultrawide
+#profile {
+#    output 'LG Electronics LG HDR WQHD+ 307NTAB8Y560' position 1920.0
+#    output 'BOE 0x094C Unknown' position 0.200
+#}
+#
+## Laptop display disabled
+profile {
+    output 'LG Electronics LG HDR WQHD+ 307NTAB8Y560' mode 3840x1600
+    output eDP-1 disable
+}
+
