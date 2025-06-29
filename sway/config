@@ -19,10 +19,10 @@ output * bg /home/a13k5/Pictures/T7/wallpapers/wallhaven-7jg5vy.jpg fill
 # displays after another 5 minutes, and turn your screens back on when
 # resumed. It will also lock screen before going to sleep.
 #
-exec swayidle -w \
-  timeout 1800 'swaylock -C /home/a13k5/.config/swaylock/rose-pine -f' \
-  timeout 2100 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-  before-sleep 'swaylock -C /home/a13k5/.config/swaylock/rose-pine -f'
+#exec swayidle -w \
+#  timeout 1800 'swaylock -C /home/a13k5/.config/swaylock/rose-pine -f' \
+#  timeout 2100 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+#  before-sleep 'swaylock -C /home/a13k5/.config/swaylock/rose-pine -f'
 
 
 ### Key bindings

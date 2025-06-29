@@ -1,10 +1,10 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "catppuccin-perfect-mocha",
     "chat.commandCenter.enabled": false,
     "editor.minimap.enabled": false,
     "workbench.startupEditor": "none",
     "markdown-preview-enhanced.previewTheme": "atom-dark.css",
-    "workbench.colorTheme": "Super One Dark",
+    "workbench.colorTheme": "Bearded Theme Surprising Blueberry",
 
 // Rose-pine theme customization
 //    "workbench.colorCustomizations": {
@@ -25,4 +25,5 @@
     "editor.scrollbar.horizontalScrollbarSize": 7,
     "workbench.panel.showLabels": false,
     "git.openRepositoryInParentFolders": "never",
+    "svelte.enable-ts-plugin": true,
 }
